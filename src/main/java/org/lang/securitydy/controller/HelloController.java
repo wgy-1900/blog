@@ -14,4 +14,8 @@ public class HelloController {
     public String hello(){
         return "hello lang";
     }
+    @GetMapping("/hello1")
+    public String hello1(){
+        return "hello lang1";
+    }
 }
