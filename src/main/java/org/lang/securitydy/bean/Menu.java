@@ -1,5 +1,7 @@
 package org.lang.securitydy.bean;
 
+import java.util.List;
+
 /**
  * @Author: Lang wgyhon@gmail.com
  * @CreateDate: 2020/4/19 22:52
@@ -8,13 +10,23 @@ package org.lang.securitydy.bean;
 public class Menu {
     private Integer id;
     private String pattern;
+    private List<Role> roles;
 
     @Override
     public String toString() {
         return "Menu{" +
                 "id=" + id +
                 ", pattern='" + pattern + '\'' +
+                ", roles=" + roles +
                 '}';
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 
     public Integer getId() {

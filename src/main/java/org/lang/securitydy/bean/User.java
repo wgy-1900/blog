@@ -60,7 +60,7 @@ public class User implements UserDetails {
 
     @Override
     public String getPassword() {
-        return null;
+        return password;
     }
 
     public String getUsername() {
@@ -91,7 +91,13 @@ public class User implements UserDetails {
         return enabled;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
 
     public void setLocked(boolean locked) {
         this.locked = locked;
