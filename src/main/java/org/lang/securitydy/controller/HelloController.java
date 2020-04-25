@@ -14,8 +14,16 @@ public class HelloController {
     public String hello(){
         return "hello lang";
     }
-    @GetMapping("/hello1")
-    public String hello1(){
-        return "hello lang1";
+    @GetMapping("/db/hello")
+    public String db(){
+        return "hello db";
+    }
+    @GetMapping("/admin/hello")
+    public String admin(){
+        return "hello admin";
+    }
+    @GetMapping("/user/hello")
+    public String user(){
+        return "hello user";
     }
 }

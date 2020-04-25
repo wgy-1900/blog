@@ -35,12 +35,11 @@ public class MyFilter implements FilterInvocationSecurityMetadataSource {
                 List<Role> roles = menu.getRoles();
                 String[]  rolesStr = new String[roles.size()];
                 for (int i = 0; i < roles.size(); i++) {
-                    rolesStr[i]= roles.get(i).getName();
+                        rolesStr[i]= roles.get(i).getName();
                 }
                 return SecurityConfig.createList(rolesStr);
             }
         }
-
         return SecurityConfig.createList("ROLE_login");
     }
 
